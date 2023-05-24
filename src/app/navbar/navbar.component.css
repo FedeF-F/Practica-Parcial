@@ -1,0 +1,11 @@
+
+.bg-custom{
+    background-color: darkslategray;
+    height: auto;
+    width: auto;
+}
+
+.navtext{
+    text-align: center !important;
+    margin: 0 auto !important;
+}

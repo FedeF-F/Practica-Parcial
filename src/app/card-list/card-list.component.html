@@ -1,0 +1,24 @@
+<div class = custom-bg>
+  <div class="container text-center ">
+    <form [formGroup]="carForm" class="">
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text bg-dark-subtle" id="inputGroup-sizing-sm">Car Data</span>
+        <input type="text" class="form-control Input-Model bg-dark white-placeholder" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" placeholder="Model" formControlName="model">
+        <input type="text" class="form-control Input-Description white-placeholder bg-dark" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" placeholder="Description" formControlName="description">
+        <input type="text" class="form-control Input-Type white-placeholder bg-dark" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" placeholder="Type" formControlName="type">
+        <input type="text" class="form-control Input-ImageLink white-placeholder bg-dark" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" placeholder="Image Link" formControlName="image">
+      </div>
+      <button type="button" class="btn btn-success" (click)="onSubmit()" [disabled]="carForm.invalid"> Add</button>
+    </form>
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center col-md-6 col-lg-4 py-2" *ngFor="let car of cars">
+        <app-car-cards [car]="car"></app-car-cards>
+      </div>
+
+    </div>
+  </div>
+</div>

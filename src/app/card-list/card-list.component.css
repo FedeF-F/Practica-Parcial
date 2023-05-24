@@ -1,0 +1,12 @@
+.custom-bg {
+    background-color: darkseagreen;
+    height: auto;
+    width: auto
+  }
+
+.white-placeholder::placeholder{
+    color: lightgrey
+}
+.form-control{
+    color: white;
+}
